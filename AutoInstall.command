@@ -33,7 +33,7 @@ do
                 OBBPUSH=$("$ADB" push "$o" "/sdcard/Android/obb/"$PACKAGENAME"/"$(basename "$o")"")
                 if [ "$?" != "0" ];then
                     echo "    Error installing OBB file: $(basename "$o")"
-                    # exit 1
+                    exit 1
                 fi
                 echo "$OBBPUSH"
             
@@ -48,7 +48,7 @@ do
     ADBINSTALL=$("$ADB" install -r "$a")
     if [ "$?" != "0" ];then
         echo "    Error installing APK file: $(basename "$a")"
-        # exit 1
+        exit 1
     fi
     echo "$ADBINSTALL"
 done
