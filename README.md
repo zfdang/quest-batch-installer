@@ -15,6 +15,7 @@ MacOS Batch App Installer for Oculus Quest
 
 # Folder layout examples:
 
+'''
 .
 ├── A Fishermans Tale v16+1.064 -QU
 │   ├── A Fishermans Tale [1.064.16] S2.11.apk
@@ -33,3 +34,4 @@ MacOS Batch App Installer for Oculus Quest
 ├── adb
 ├── install_all.sh
 └── readme.txt
+'''
