@@ -5,16 +5,19 @@ Oculus Quest的批量安装程序/游戏脚本
 
 # Instructions:
 
-1. extract all files into one folder
-2. Copy the Apk(s) and OBB(s) you would like to install to the current folder; each app/game into one folder; See folder layout examples
-3. ***FIRST RUN ONLY*** Due to gatekeeper not liking the redistrtbution of the android tools the following must be done.
+1. Extract all files into one folder
 
-    3a. Right click on the following exec files and click open. Allow any confirmation prompts to RUN
+    chmod +x install_all.sh AutoInstall.command
+    
+3. Copy the Apk(s) and OBB(s) you would like to install to the current folder; each app/game into one folder; See folder layout examples
+4. Connect the Quest to the system
+5. ***FIRST RUN ONLY*** Due to gatekeeper not liking the redistrtbution of the android tools the following must be done.
+
+    4a. Right click on the following exec files and click open. Allow any confirmation prompts to RUN
 
         aapt2
         adb
     
-4. Connect the Quest to the system
 5. run install_all.sh
 
 # Folder layout examples:
