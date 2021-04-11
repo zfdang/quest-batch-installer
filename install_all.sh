@@ -1,7 +1,7 @@
 # verify device, and lunch AutoInstall in each app/game folder
 
 DIR="$(pwd)"
-ADB="$DIR/../adb"
+ADB="$DIR/adb"
 
 # check ADB status
 "$ADB" kill-server
