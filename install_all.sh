@@ -15,7 +15,7 @@ fi
 echo "Total Apps/Games:"
 find . -maxdepth 1 -type d \( ! -name . \) | wc -l
 echo "Now begin to install ..."
-find . -maxdepth 1 -type d \( ! -name . \) -print0 | sort -zn | xargs -0 -I '{}' bash -c "cd '{}' && ../AutoInstall.command" \;
+find . -maxdepth 1 -type d \( ! -name . \) -print0 | sort -zn | xargs -0 -I '{}' bash -c "cd \"{}\" && ../AutoInstall.command" \;
 
 # kill adb at the end
 "$ADB" kill-server
